@@ -1,0 +1,52 @@
+header{
+	background-color: #000;
+}
+.top{
+	width: 1920;
+	display: flex;
+	justify-content: space-around;
+}
+.prem{
+	padding-top: 15px;
+	color: #fff;
+	display: flex;
+}
+.car{
+	padding:1px; 
+	margin-left: 5px;
+	border-radius: 4px;
+	background-color: #4A90E2;
+	height: 20px;
+}
+.nav{
+	list-style: none;
+	display: flex;
+	color: #fff;
+}
+.nav li{
+	margin: auto;
+	margin: 0 15px;
+}
+.zoom{
+	padding-top: 20px;
+}
+.black-car{
+	background-image: url(Bitmap.svg);
+	width: 370px;
+	height: 560px;
+	color: #fff;
+}
+.rickie{
+	margin-top: 400px;
+	padding-left: 10px;
+	font-size: 25px;
+}
+.category{
+	background-color: #4A90E2;
+	width: 62px;
+	height: 22px;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	padding-top: 5px;
+}

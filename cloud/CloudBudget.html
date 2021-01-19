@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>CloudBudget</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <style type="text/css">
+     	body {
+		margin: 0;
+		font-family: LATO;
+	    }
+	 * {
+			box-sizing: border-box;
+	    }
+	img	{
+			width: 100%;
+		}
+		a {
+			text-decoration: none;
+			color:inherit;
+		}
+		.cloud-budget {
+			background-image: url(Rectangle3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+		}
+		.fon {
+			width: 100%;
+			background-color: rgba(213, 32, 71, 0.6);
+		}
+		.wrap {
+			width: 1100px;
+			margin: auto;
+		}
+		.nevbar-text div {
+			width: 24px;
+			height: 17px;
+		}
+		.nevbar-text h3 {
+			padding: 0;
+			margin: 0;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.nevbar-text {
+			display: flex;
+			width: 150px;
+			justify-content: space-around;
+			color: white;
+			margin-top: 55px;
+		}
+		.nevbar-menu {
+			width: 445px;
+		}
+		.nevbar-menu ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			margin: 0;
+			margin-top: 55px;
+		}
+		.nevbar-menu ul li {
+			color: white;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		.nevbar-button {
+			width: 100px;
+			border-radius: 6px;
+			border: 1px solid #FFFFFF;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			color: white;
+			font-size: 14px;
+			margin-top: 49px;
+		}
+		.nevbar-button:hover {
+			background-color: #e82222;
+		}
+		.nevbar {
+			display: flex;
+			justify-content: space-between;
+		}
+		.cloud-title {
+			margin: auto;
+			width: 578px;
+			text-align: center;
+			color: #FFFFFF;
+			margin-top: 177px;
+			padding-bottom: 150px;
+		}
+		.cloud-title h1 {
+			font-size: 72px;
+			margin: 0;
+		}
+		.cloud-title p {
+			width: 540px;
+			margin: auto;
+			font-size: 24px;
+			line-height: 36px;
+			margin-top: 39px;
+		}
+		.sign-up {
+			width: 160px;
+			border-radius: 6px;
+			background-color: white;
+			color: #ED4C5C;
+			padding-top: 17px;
+			padding-bottom: 17px;
+			margin: auto;
+			margin-top: 39px;
+			margin-bottom: 150px;
+		}
+		.sign-up:hover {
+			background-color: #e4e0e0;
+		}
+		.left-text {
+			width: 445px;
+		}
+		.left-text h1 {
+			font-size: 36px;
+			line-height: 43px;
+		}
+		.left-text p {
+			font-size: 14px;
+			line-height: 19px;
+			margin-top: 24px;
+		}
+		.left-text .learn-more, .read-more {
+			color: #ED4C5C;
+		}
+		.video-section {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 94px;
+			padding-bottom: 95px;
+		}
+		.video {
+			width: 478px;
+			height: 311px;
+		}
+		.video-1 {
+			width: 445px;
+			background-image: url(Video.png);
+			background-repeat: no-repeat;
+			height: 311px;
+			position: relative;
+			left: 33px;
+		}
+		.elipse {
+			width: 66px;
+			border-radius:50px;
+			background-color: #ED4C5C;
+			text-align: center;
+			padding-top: 24px;
+			padding-bottom: 22px;
+			position: relative;
+			left: -33px;
+			top: 120px;
+		}
+		.elipse img {
+			width: 15px;
+			height: 15px;
+		}
+		.overview{
+			background-color: #FAFAFA;
+		}
+		.overview h1 {
+			font-size: 36px;
+			text-align: center;
+			padding-top: 63px;
+		}
+		.overview h2 {
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 18px;
+		}
+		.overview p {
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.overview-cards {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 229px;
+			margin-top:70px;
+		}
+		.img1 {
+			width: 350px;
+			height: 250px;
+			background-image: url(Bg.png);
+			background-repeat: no-repeat;
+			position: relative;
+		}
+		.img2 {
+			width: 350px;
+			height: 250px;
+			background-image: url(Bg2.png);
+			background-repeat: no-repeat;
+			position: relative;
+		}
+		.img3 {
+			width: 350px;
+			height: 250px;
+			background-image: url(Bg3.png);
+			background-repeat: no-repeat;
+			position: relative;
+		}
+		.text-block {
+			width: 290px;
+			height: 200px;
+			background-color: white	;
+			text-align: center;
+			border-radius:8px;
+			padding-top: 20px;
+			padding-bottom: 25px;
+			position: absolute;
+			bottom: -100px;
+			left: calc(50% - 145px );top: 157px;
+			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+		}
+		.read-more {
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 30px;
+			font-weight: 700;
+		}
+		.technology .content h1 {
+			text-align: center;
+			font-size: 36px;
+			line-height: 43px;
+			padding-top: 70px;
+		}
+		.cloud-01 {
+			width: 255px;
+		}
+		.img-01 {
+			width: 117px;
+			height: 120px;
+			background-image: url(01.png);
+			background-repeat: no-repeat;
+			margin:auto;
+		}
+		.img-02 {
+			width: 117px;
+			height: 120px;
+			background-image: url(02.png);
+			background-repeat: no-repeat;
+			margin:auto;
+		}
+		.img-03 {
+			width: 117px;
+			height: 120px;
+			background-image: url(03.png);
+			background-repeat: no-repeat;
+			margin:auto;
+		}
+		.img-04 {
+			width: 117px;
+			height: 120px;
+			background-image: url(04.png);
+			background-repeat: no-repeat;
+			margin:auto;
+		}
+		.cloud {
+			margin-top: 62px;
+			padding-bottom: 100px;
+		}
+		.img-cloud {
+			width: 80px;
+			height: 80px;
+			background-image: url(Frame3.png);
+			background-repeat: no-repeat;
+			margin: auto;
+			position: relative;
+			top: 25px;
+			background-position: 50% 50%;
+		}
+		.img-cloud-1 {
+			width: 80px;
+			height: 80px;
+			background-image: url(Frame4.png);
+			background-repeat: no-repeat;
+			margin: auto;
+			position: relative;
+			top: 25px;
+			background-position: 50% 50%;
+		}
+		.img-cloud-2 {
+			width: 80px;
+			height: 80px;
+			background-image: url(iwwa-file-pdf.png);
+			background-repeat: no-repeat;
+			margin: auto;
+			position: relative;
+			top: 25px;
+			background-position: 50% 50%;
+		}
+		.img-cloud-3 {
+			width: 80px;
+			height: 80px;
+			background-image: url(Frame5.png);
+			background-repeat: no-repeat;
+			margin: auto;
+			position: relative;
+			top: 25px;
+			background-position: 50% 50%;
+		}
+		.cloud h3 {
+			text-align: center;
+			font-size: 18px;
+			padding: 0;
+			margin-top: 0;
+		}
+		.cloud p {
+			text-align: center;
+			font-size: 12px;
+			line-height: 14px;
+			width: 191px;
+			margin: auto;
+		}
+		.cloud {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 144px;
+		}
+		.app-rod {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 122px;
+			padding-bottom: 113px;
+		}
+		.app-download {
+			background-color: #ED4C5C;
+			color: white;
+		}
+		.app-text {
+			width: 445px;
+		}
+		.app-text h1 {
+			font-size: 36px;
+			font-weight: 600;
+			line-height: 43px;
+		}
+		.app-text p {
+			font-size: 14px;
+			line-height: 19px;
+		}
+		.icom-rod {
+			width: 134px;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+		}
+		.icom-rod div {
+			width: 32px;
+			height: 32px;
+		}
+		.slider {
+			width: 533px;
+			height: 311px;
+			background-image: url(Slider.png);
+			background-repeat: no-repeat;
+		}
+		.a-block1 {
+			width: 259px;
+		}
+		.address-rod {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 85px;
+			padding-bottom: 86px;
+		}
+		.address-rod h3 {
+			padding: 0;
+			margin: 0;
+		}
+		.address-rod p {
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 33px;
+		}
+		.copyright {
+			padding-top: 140px;
+		}
+		.a-block2 {
+			width: 200px;
+		}
+		.a-block2 ul, .a-block3 ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			margin-top: 28px;
+		}
+		.a-block2 ul li, .a-block3 ul li {
+			font-size: 12px;
+			line-height: 18px;
+		} 
+		.a-block3 {
+			width: 122px;
+		}
+		.social {
+			width: 66px;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+		.social div {
+			width: 14px;
+			height: 14px;
+		}
+		.visa {
+			width: 216px;
+			height: 31px;
+			margin-top: 33px;
+		}
+		.wrap {
+			max-width: 100%;
+		}
+
+
+
+		@media only screen and (max-width: 375px) {
+			.cloud-budget {
+				width: 100%;
+				background-image: url(Rectangle3.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.nevbar-menu {
+				display: none;
+			}
+			.nevbar {
+				justify-content: space-around;
+				padding: 0;
+				margin: 0;
+			}
+			.cloud-title {
+				width: 100%;
+				margin-top: 20px;
+				padding: 0;
+			}
+			.cloud-title h1 {
+				font-size: 24px;
+				width: 375px;
+			}
+			.cloud-title p {
+				font-size: 13px;
+				line-height: 18px;
+				width: 375px;
+				margin: 0;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.nevbar-text {
+				margin-top: 30px;
+			}
+			.nevbar-button {
+				margin-top: 20px;
+			}
+			.sign-up {
+				margin-top: 0;
+				width: 120px;
+				margin: 0;
+			}
+			.mob {
+				padding-bottom: 20px;
+				margin: auto;
+				width: 120px;
+			}
+			.video {
+				width: 100%;
+				padding-top: 30px;
+			}
+			.video-1 {
+				width: 342px;
+				background-size: contain;
+			}
+			.video-section {
+				flex-wrap: wrap;
+				margin-top: 20px;
+				padding: 0;
+			}
+			.left-text {
+				text-align: center;
+			}
+			.left-text h1 {
+				font-size: 24px;
+				line-height: 20px;
+			}
+			.elipse {
+				top: 95px;
+			}
+			.overview h1 {
+				font-size: 24px;
+				padding-top: 30px;
+			}
+			.overview-cards {
+				justify-content: center;
+				flex-wrap: wrap;
+				padding: 0;
+				margin-top: 35px;
+
+			}
+			.card-1, .card-2, .card-3 {
+				padding-bottom: 130px;
+			}
+			.technology .content h1 {
+				font-size: 24px;
+				padding-top: 0;
+			}
+			.cloud {
+				flex-wrap: wrap;
+				justify-content: center;
+				padding-bottom: 70px;
+
+			}
+			.cloud-01 {
+				padding-bottom: 20px;
+			}
+			.app-rod {
+				flex-wrap: wrap;
+				justify-content: center;
+				padding-top: 30px;
+				padding: 0;
+			}
+			.app-text h1 {
+				font-size: 24px;
+				padding: 10px;
+				text-align: center;
+			}
+			.app-text p {
+				font-size: 13px;
+				padding: 10px;
+				text-align: center;
+			}
+			.icom-rod {
+				margin:0;
+				margin: auto;
+				margin-bottom: 40px;
+				width: 110px;
+				justify-content: space-around;
+			}
+			.icom-rod div {
+				width: 25px;
+				height: 25px;
+			}
+			.slider {
+				width: 375px;
+				background-size: contain;
+			}
+			.address-rod h3 {
+				font-size: 15px;
+				text-align: center;
+			}
+			.address-rod p {
+				font-size: 10px;
+				text-align: center;
+			}
+			.a-block2 ul li, .a-block3 ul li {
+				font-size: 10px;
+				text-align: center;
+			}
+			.visa {
+				width: 130px;
+			}
+			.visa img {
+				width: 130px;
+				padding: 10px;
+			}
+			.copyright {
+				padding: 0;
+			}
+
+
+		}
+	
+     </style>
+</head>
+<body>
+<header class="cloud-budget">
+	<div class="fon">
+	<section class="wrap">
+		<div class="content">
+			<div class="nevbar">
+				<div class="nevbar-text">
+					<div>
+						<img src="Vector.png">
+					</div>
+					<h3>CloudBudget</h3>
+				</div>
+				<nav class="nevbar-menu">
+					<ul>
+						<li><a href="#">OVERVIEW</a></li>
+						<li><a href="#">FEATURES</a></li>
+						<li><a href="#">TECHNOLOGY</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<li><a href="#">SIGN UP</a></li>
+					</ul>
+				</nav>
+				<div class="nevbar-login">
+					<a href="#"><div class="nevbar-button">LOGIN</div></a>
+				</div>
+			</div>
+			<div class="cloud-title">
+				<h1>CloudBudget</h1>
+				<p>Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
+				<div class="mob">
+				<a href="#"><div class="sign-up">SIGN UP</div></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+</header>
+<main>
+	<section class="wrap">
+		<div class="content">
+			<div class="video-section">
+				<div class="left-text">
+					<h1>Easy to Use Cloud Budget Management Software</h1>
+					<p>Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
+					<p class="learn-more"><a href="#">Learn More</a></p>
+				</div>
+				<div class="video">
+					<div class="video-1">
+						<div class="elipse">
+							<a href="#">
+								<img src="PlaySolid(F5B0).png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="overview">
+		<section class="wrap">
+			<div class="content">
+				<h1>Features</h1>
+				<div class="overview-cards">
+					<div class="card-1">
+						<div class="img1">
+							<div class="text-block">
+							<h2>Supports All Currencies and Cards</h2>
+							<p>
+								We support all popular currencies and is fully customizable to add
+							</p>
+							<div class="read-more">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="card-2">
+						<div class="img2">
+							<div class="text-block">
+							<h2>Manage your expenses on the go</h2>
+							<p>
+								You can access your account from anywhere in the world on any device
+							</p>
+							<div class="read-more">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="card-3">
+						<div class="img3">
+							<div class="text-block">
+							<h2>Cloud Budget Management Software</h2>
+							<p>
+								Our software is made so you can access and manage your budget
+							</p>
+							<div class="read-more">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="technology">
+		<section class="wrap">
+			<div class="content">
+				<h1>Technology</h1>
+				<div class="cloud">
+					<div class="cloud-01">
+						<div class="img-01">
+							<div class="img-cloud"></div>
+						</div>
+						<h3>Cloud Storage</h3>
+						<p>Access your account from anywhere in the world on any device</p>
+					</div>
+					<div class="cloud-01">
+						<div class="img-02">
+							<div class="img-cloud-1"></div>
+						</div>
+						<h3>Secure</h3>
+						<p>All your information is stored on secure cloud servers</p>
+					</div>
+					<div class="cloud-01">
+						<div class="img-03">
+							<div class="img-cloud-2"></div>
+						</div>
+						<h3>PDF Download</h3>
+						<p>Download any of your reports in PDF format</p>
+					</div>
+					<div class="cloud-01">
+						<div class="img-04">
+							<div class="img-cloud-3"></div>
+						</div>
+						<h3>CSV Download</h3>
+						<p>All your information is stored on secure cloud servers</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="app-download">
+		<section class="wrap">
+			<div class="content">
+				<div class="app-rod">
+					<div class="app-text">
+						<h1>Stay focused on saving money</h1>
+						<p>It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+						<div class="icom-rod">
+							<div>
+								<a href="#">
+									<img src="ion-logo-google-playstore.png">
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="ion-logo-apple-appstore.png">
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="simple-icons_windows.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="app-fon">
+						<div class="slider"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</main>
+<footer class="address">
+	<section class="wrap">
+		<div class="content">
+			<div class="address-rod">
+				<div class="a-block1">
+					<h3>Address</h3>
+					<p>Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090 Picosia USA</p>
+					<p class="copyright">
+						Copyright 2018 CloudBudget
+					</p>
+				</div>
+				<div class="a-block2">
+					<h3>Services</h3>
+					<ul>
+						<li>
+							<a href="#">overview</a>
+						</li>
+						<li>
+							<a href="#">features</a>
+						</li>
+						<li>
+							<a href="#">technology</a>
+						</li>
+						<li>
+							<a href="#">Terms & Conditions</a>
+						</li>
+						<li>
+							<a href="#">Privecy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="a-block3">
+					<h3>Get in Touch</h3>
+					<ul>
+						<li>
+							<a href="#">info@cloudbudget.com</a>
+						</li>
+						<li>+1 844-721-7120</li>
+					</ul>
+					<div class="social">
+						<div>
+							<a href="#">
+								<img src="feather-facebook.png">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="feather-linkedin.png">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="feather-twitter.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="a-block4">
+					<h3>We Support</h3>
+					<div class="visa">
+						<img src="secure-p-1 1.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+</body>
+</html>
